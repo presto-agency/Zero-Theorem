@@ -1,0 +1,58 @@
+html {
+  font-size: calc(100vw / 1440 * 10);
+
+  @media (max-width: $mob) {
+    font-size: calc(100vw / 360 * 10);
+  }
+
+  @media (min-width: $desktop-xl) {
+    font-size: 10px;
+  }
+}
+
+body {
+  background:  #0A0A0A;
+  overflow: initial;
+  //background: url("../img/bg.svg") no-repeat top 58.5rem right 0;
+  @media (max-width: $mob) {
+    //background: url("../img/bg.svg") no-repeat top 18.5rem right -8rem;
+  }
+
+  &.js-loaded {
+    overflow: initial;
+
+    .page-preloader {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+
+.root {
+  padding: 0 0 15rem 0;
+  @media (max-width: $mob) {
+    padding: 0 0 7.2rem 0;
+  }
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 144rem;
+  padding: 0 6.4rem;
+  margin: 0 auto;
+
+  @media (max-width: $mob) {
+    padding: 0 0.8rem;
+  }
+
+  &._large {
+    padding: 0 6.4rem;
+    @media (max-width: $mob) {
+      padding: 0 2.4rem;
+    }
+  }
+}

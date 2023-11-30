@@ -1,0 +1,78 @@
+h1 {
+  font-weight: 700;
+  font-size: 7.2rem;
+   line-height: 110%;
+  @media (max-width: $mob) {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 4.8rem;
+  line-height: 100%;
+  font-weight: 700;
+  @media (max-width: $mob) {
+    font-size: 3.2rem;
+  }
+}
+
+h3 {
+  font-size: 4rem;
+  line-height: 100%;
+  font-weight: 600;
+  @media (max-width: $mob) {
+    font-size: 2.4rem;
+  }
+}
+
+h4 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 130%;
+  @media (max-width: $mob) {
+    font-size: 2rem;
+  }
+}
+
+h5 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 100%;
+  @media (max-width: $mob) {
+    font-size: 1.6rem;
+  }
+}
+
+h6 {
+  font-size: 1.8rem;
+  line-height: 111%;
+  font-weight: 700;
+  @media (max-width: $mob) {
+    font-size: 1.4rem;
+  }
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 160%;
+  @media (max-width: $mob) {
+    font-size: 1.4rem;
+  }
+
+  small {
+    font-size: 1.4rem;
+    @media (max-width: $mob) {
+      font-size: 1.2rem;
+    }
+  }
+
+  strong {
+    font-size: 2rem;
+    font-weight: 700;
+    @media (max-width: $mob) {
+      line-height: 133%;
+      font-size: 1.6rem;
+    }
+  }
+}

@@ -1,0 +1,220 @@
+.header {
+  position: absolute;
+  z-index: 10;
+  top: 2.4rem;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid #201901;
+  &.active {
+    .header {
+      &__content {
+        &_nav {
+          top: 0;
+        }
+        &_cross {
+          span {
+
+            &:nth-child(1) {
+              top: 50%;
+              transform: translateX(-50%) translateY(-50%) rotateZ(45deg);
+            }
+
+            &:nth-child(2) {
+              left: -10px;
+              opacity: 0;
+            }
+
+            &:nth-child(3) {
+              bottom: 50%;
+              transform: translateX(-50%) translateY(50%) rotateZ(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.4rem 0 1.2rem;
+
+    &_logo {
+      position: relative;
+      z-index: 2;
+      height: 3.2rem;
+      width: auto;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &_nav {
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+        align-items: center;
+
+        li {
+          margin: 0 5.6rem 0 0;
+          padding-bottom: 1.4rem;
+          a {
+            color: $col-white;
+            font-size: 1.4rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%; /* 14px */
+            text-transform: capitalize;
+
+            @media (min-width: $desktop-l) {
+              &:hover {
+                color: $brand-color-yellow;
+              }
+            }
+          }
+          &.has-sub{
+            position: relative;
+            &:after{
+              position: absolute;
+              content: '';
+              right: -1rem;
+              top: 30%;
+              margin-top: -.2rem;
+              width: .4rem;
+              height: .4rem;
+              border-radius: 50%;
+              background: $brand-color-yellow;
+            }
+            ul{
+              position: absolute;
+              top: 100%;
+              opacity: 0;
+              visibility: hidden;
+              padding: 2.4rem;
+              align-items: flex-start;
+              width: 22rem;
+              z-index: -1;
+              flex-direction: column;
+              border-radius: 1.5rem;
+              background: linear-gradient(99deg, #080808 10.82%, #171E23 94.38%);
+              li{
+                margin: 0 0 1.3rem 0;
+                padding-bottom: 0;
+              }
+              a{
+                color: #8C8C8C;
+                font-size: 1.4rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 100%;
+                text-transform: capitalize;
+                &:hover {
+                  color: $brand-color-yellow;
+                }
+              }
+            }
+            &:hover{
+              ul{
+                opacity: 1;
+                visibility: visible;
+                z-index: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &_cross {
+      @media (min-width: $desktop-l) {
+        display: none;
+      }
+      position: relative;
+      z-index: 2;
+      padding: 0.8rem 0.4rem;
+      width: 3.2rem;
+      height: 3.2rem;
+
+      span {
+        position: absolute;
+        width: 2.4rem;
+        height: 0.2rem;
+        background-color: $col-black;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 2px;
+        transition: 500ms;
+
+        &:first-child {
+          top: 0.8rem;
+        }
+
+        &:nth-child(2) {
+          top: 50%;
+          transform: translateY(-50%) translateX(-50%);
+        }
+
+        &:last-child {
+          top: initial;
+          bottom: 0.8rem;
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width: $desktop-x) {
+  .header {
+    top: 0.7rem;
+
+    &__content {
+      padding: 1.9rem 1.6rem;
+
+      &_logo {
+        height: 2.6rem;
+      }
+
+      &_nav {
+        position: fixed;
+        top: -100%;
+        width: 100vw;
+        max-height: 100%;
+        overflow-y: auto;
+        background-color: $col-white;
+        left: 0;
+        flex-direction: column;
+        padding: 10.4rem 2.4rem 4rem;
+        transition: 500ms;
+
+        ul {
+          flex-direction: column;
+
+          li {
+            margin: 0 0 1.7rem 0;
+
+            a {
+              font-size: 2.4rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+
+      .button {
+        width: 100%;
+
+        span {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
