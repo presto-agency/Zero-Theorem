@@ -652,9 +652,16 @@
 }
 .contact{
   &__item{
+    border-bottom: 1px solid #201901;
+    margin-bottom: 3.2rem;
+    padding-bottom: 3.2rem;
     ul{}
     li{
       display: flex;
+      margin-bottom: 3.2rem;
+      &:last-of-type{
+        margin-bottom: 0;
+      }
       span{
         font-variant-numeric: lining-nums proportional-nums;
         font-size: 1.6rem;
@@ -664,6 +671,8 @@
         letter-spacing: 4.8px;
         text-transform: uppercase;
         &:first-of-type{
+          width: 100%;
+          max-width: 22.4rem;
           color: $brand-color-yellow;
         }
         &:nth-of-type(2){
@@ -677,6 +686,19 @@
         font-style: normal;
         font-weight: 500;
         line-height: 160%; /* 25.6px */
+        max-width: 26rem;
+      }
+      a{
+        color: #8C8C8C;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 160%; /* 25.6px */
+        max-width: 26rem;
+        &:hover{
+          color: $brand-color-yellow;
+        }
       }
     }
   }
