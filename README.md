@@ -54,8 +54,7 @@ deploy to gh-pages automatically after push to branch
 
 deploy:
 [main](https://presto-agency.github.io/Zero-Theorem/),
-[404](https://presto-agency.github.io/Harry-food/404.html),
-[about](https://presto-agency.github.io/Harry-food/about.html),
-[contact](https://presto-agency.github.io/Harry-food/contact.html),
-[imprint](https://presto-agency.github.io/Harry-food/imprint.html),
-[privacy](https://presto-agency.github.io/Harry-food/privacy.html),
+[about](https://presto-agency.github.io/Zero-Theorem/about-us.html),
+[service](https://presto-agency.github.io/Zero-Theorem/service.html),
+[portfolio](https://presto-agency.github.io/Zero-Theorem/portfolio.html),
+[contact](https://presto-agency.github.io/Zero-Theorem/contact.html),
