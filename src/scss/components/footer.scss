@@ -3,18 +3,36 @@
     .container{
       display: flex;
       justify-content: space-between;
+      @media (max-width: $mob) {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+      }
     }
   }
   ul{
     display: flex;
+    @media (max-width: $mob) {
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__logo{
+    @media (max-width: $mob) {
+      margin: 0 auto 2rem;
+    }
   }
   &__top{
     border-bottom:1px solid #201901;
-    padding-bottom: 2.4rem;
+    padding-bottom: .9rem;
     margin-bottom: 2.4rem;
     ul{}
     li{
       margin-left: 7.2rem;
+      @media (max-width: $mob) {
+        margin:0 0 1rem 0;
+      }
     }
     a{
       color: #FFF;
@@ -35,12 +53,25 @@
     font-style: normal;
     font-weight: 400;
     line-height: 100%; /* 12px */
+    @media (max-width: $mob) {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 1.2rem;
+    }
   }
   &__bottom{
     padding-bottom: 4rem;
-    ul{}
+    ul{
+      @media (max-width: $mob) {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
     li{
       margin-left: 6.4rem;
+      @media (max-width: $mob) {
+        margin:0 0 1rem 0;
+      }
     }
     a{
       color: #6F7A83;

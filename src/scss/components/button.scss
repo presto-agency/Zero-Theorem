@@ -12,69 +12,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: 100%; /* 16px */
-  span {
-    position: relative;
-    border: 1px solid $col-black;
-    padding: 1.3rem 2.3rem;
-    border-radius: 20px;
-  }
-  &:before {
-    content: "";
-    position: absolute;
-    bottom: calc(-100% - 4px);
-    left: 0;
-    width: 100%;
-    height: calc(100% + 2px);
-    transition: 200ms cubic-bezier(0.7, 0, 0.2, 1);
-    border-radius: 19px;
-  }
-
-  &-large {
-    span {
-      padding: 1.3rem 4.8rem;
-      @media (max-width: $mob) {
-        padding: 1.6rem 4.8rem;
-      }
-    }
-  }
-
-  &._light {
-    color: $col-black;
-
-    &:before {
-      background-color: $col-black;
-    }
-
-    @media (min-width: $desktop-l) {
-      &:hover {
-        color: $col-white;
-
-        &:before {
-          bottom: -1px;
-        }
-      }
-    }
-  }
-
-  &._black {
-    color: $col-white;
-
-    &:before {
-      background-color: $col-black;
-      bottom: -1px;
-    }
-
-    @media (min-width: $desktop-l) {
-      &:hover {
-        color: $col-black;
-
-        &:before {
-          bottom: calc(100% + 2px);
-        }
-      }
-    }
-  }
-  &__yellow{
+  &._yellow{
     color: $brand-color-yellow;
     padding: 1.8rem 8.6rem;
     border: 1px solid $brand-color-yellow;

@@ -39,12 +39,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2.4rem 0 1.2rem;
+    padding: .4rem 0 1.2rem;
 
     &_logo {
       position: relative;
       z-index: 2;
-      height: 3.2rem;
+      height: 4.1rem;
       width: auto;
 
       img {
@@ -63,7 +63,7 @@
         align-items: center;
 
         li {
-          margin: 0 5.6rem 0 0;
+          margin: 1.3rem 0 0 7.8rem;
           padding-bottom: 1.4rem;
           a {
             color: $col-white;
@@ -133,7 +133,7 @@
     }
 
     &_cross {
-      @media (min-width: $desktop-l) {
+      @media (min-width: $desktop-sl) {
         display: none;
       }
       position: relative;
@@ -146,7 +146,7 @@
         position: absolute;
         width: 2.4rem;
         height: 0.2rem;
-        background-color: $col-black;
+        background-color: $brand-color-yellow;
         left: 50%;
         transform: translateX(-50%);
         border-radius: 2px;
@@ -171,15 +171,13 @@
   }
 }
 
-@media (max-width: $desktop-x) {
+@media (max-width: $desktop-sl) {
   .header {
     top: 0.7rem;
-
     &__content {
-      padding: 1.9rem 1.6rem;
-
+      padding: 1.4rem 0;
       &_logo {
-        height: 2.6rem;
+        height: 4.1rem;
       }
 
       &_nav {
@@ -188,7 +186,7 @@
         width: 100vw;
         max-height: 100%;
         overflow-y: auto;
-        background-color: $col-white;
+        background-color: #0A0A0A;
         left: 0;
         flex-direction: column;
         padding: 10.4rem 2.4rem 4rem;

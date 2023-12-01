@@ -13,7 +13,7 @@
 
 <h2 id="introduction">Introduction</h2>
 
-This is a front side of "Harry food" project. Created for WP.
+This is a front side of "Zero Theorem" project. Created for WP.
 
 <h2 id="requirements">Requirements</h2>
 
@@ -53,7 +53,7 @@ yarn build
 deploy to gh-pages automatically after push to branch
 
 deploy:
-[main](https://presto-agency.github.io/Harry-food/),
+[main](https://presto-agency.github.io/Zero-Theorem/),
 [404](https://presto-agency.github.io/Harry-food/404.html),
 [about](https://presto-agency.github.io/Harry-food/about.html),
 [contact](https://presto-agency.github.io/Harry-food/contact.html),

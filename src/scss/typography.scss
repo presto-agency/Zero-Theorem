@@ -1,9 +1,9 @@
 h1 {
-  font-weight: 700;
-  font-size: 7.2rem;
    line-height: 110%;
+  font-size: 7.2rem;
+  font-weight: 700;
   @media (max-width: $mob) {
-    font-size: 4rem;
+    font-size: 3.6rem;
   }
 }
 
