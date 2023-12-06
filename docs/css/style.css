@@ -542,7 +542,7 @@ body.js-loaded .page-preloader {
 }
 
 .footer__top a:hover {
-  color: #FFC600;
+  color: #3870FF;
 }
 
 .footer__copy {
@@ -1049,7 +1049,7 @@ body.js-loaded .page-preloader {
 
 .portfolio-button-prev:hover svg path,
 .portfolio-button-next:hover svg path {
-  fill: #fff;
+  fill: #0A0A0A;
 }
 
 .portfolio-button-prev {
@@ -1700,6 +1700,10 @@ body.js-loaded .page-preloader {
 }
 
 @media (max-width: 992px) {
+  .header__content_nav ul li.has-sub {
+    text-align: center;
+  }
+
   .header__content_nav ul li.has-sub a:after {
     top: 50%;
   }

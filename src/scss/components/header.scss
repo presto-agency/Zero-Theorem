@@ -79,6 +79,9 @@
           }
           &.has-sub{
             position: relative;
+            @media (max-width: $desktop-sl) {
+              text-align: center;
+            }
             a{
               position: relative;
               &:after{
