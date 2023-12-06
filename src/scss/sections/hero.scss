@@ -369,7 +369,7 @@
   }
   &__btn{
     display: flex;
-    margin-bottom: -3.6rem;
+    margin-bottom: 0;
     @media (max-width: $mob) {
       margin-bottom: 0;
       position: absolute;
@@ -480,7 +480,8 @@
   }
   &__logo{
     text-align: center;
-    margin-bottom: 9.6rem;
+    margin:0 auto 9.6rem;
+    max-width: 59.6rem;
     @media (max-width: $desktop-sm) {
       max-width: 80%;
       margin: 0 auto 6.4rem;
@@ -566,7 +567,7 @@
   }
 }
 .contact{
-  padding: 10rem 0 23rem;
+  padding: 10rem 0 20rem;
   @media (max-width: $mob) {
     padding: 6.4rem 0 6.4rem;
   }
@@ -598,7 +599,7 @@
     }
   }
   &__title{
-    margin-bottom: 7rem;
+    margin-bottom: 6.7rem;
     @media (max-width: $mob) {
       margin-bottom: 2rem;
     }
@@ -640,6 +641,7 @@
   &__form{
     width: 100%;
     max-width: 47.8rem;
+    padding: 4.8rem 0 0;
     @media (max-width: $desktop-sm) {
       max-width: 100%;
     }
@@ -907,18 +909,23 @@
 }
 .card{
   padding: 10rem 0 22rem;
+  @media (max-width: $mob) {
+    padding: 6.4rem 0 6.4rem;
+  }
   &__item{
     margin-bottom: 22rem;
+    @media (max-width: $mob) {
+      margin-bottom: 9rem;
+    }
     &:last-of-type{
       margin-bottom: 0;
     }
     &-title{
       color: #FFF;
-      font-size: 4.8rem;
-      font-style: normal;
-      font-weight: 700;
-      line-height: 100%;
       margin-bottom: 4rem;
+      @media (max-width: $mob) {
+        margin-bottom: 1.6rem;
+      }
       h2{
         color: #fff;
       }
@@ -926,6 +933,9 @@
     &-media{
       width: 100%;
       margin-bottom: 9.6rem;
+      @media (max-width: $mob) {
+        margin-bottom: 2.6rem;
+      }
       img{
         width: 100%;
       }
@@ -935,16 +945,23 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 6.4rem;
+    @media (max-width: $mob) {
+      flex-direction: column;
+      margin-bottom: 2.4rem;
+    }
     &-title{
       color: $brand-color-yellow;
       font-variant-numeric: lining-nums proportional-nums;
-      font-size: 16px;
+      font-size: 1.6rem;
       font-style: normal;
       font-weight: 600;
       line-height: 100%; /* 16px */
       letter-spacing: 4.8px;
       text-transform: uppercase;
       max-width: 54rem;
+      @media (max-width: $mob) {
+        max-width: 100%;
+      }
     }
     &-text{
       width: 100%;
@@ -955,6 +972,9 @@
       font-style: normal;
       font-weight: 500;
       line-height: 160%; /* 25.6px */
+      @media (max-width: $mob) {
+        max-width: 100%;
+      }
       p{
         margin-bottom: 1.6rem;
         &:last-of-type{

@@ -312,7 +312,7 @@ body.js-loaded .page-preloader {
 .header {
   position: absolute;
   z-index: 10;
-  top: 2.4rem;
+  top: 1.1rem;
   left: 0;
   width: 100%;
   border-bottom: 1px solid #201901;
@@ -342,14 +342,14 @@ body.js-loaded .page-preloader {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.4rem 0 1.2rem;
+  padding: 0;
 }
 
 .header__content_logo {
   position: relative;
   z-index: 2;
-  height: 4.1rem;
-  width: auto;
+  height: 7rem;
+  width: 19rem;
 }
 
 .header__content_logo img {
@@ -388,11 +388,15 @@ body.js-loaded .page-preloader {
   position: relative;
 }
 
-.header__content_nav ul li.has-sub:after {
+.header__content_nav ul li.has-sub a {
+  position: relative;
+}
+
+.header__content_nav ul li.has-sub a:after {
   position: absolute;
   content: "";
   right: -1rem;
-  top: 30%;
+  top: 50%;
   margin-top: -0.2rem;
   width: 0.4rem;
   height: 0.4rem;
@@ -432,7 +436,29 @@ body.js-loaded .page-preloader {
   color: #FFC600;
 }
 
+.header__content_nav ul li.has-sub ul a:after {
+  display: none;
+}
+
 .header__content_nav ul li.has-sub:hover ul {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.header__content_nav ul li.has-sub.active:after {
+  top: 10%;
+}
+
+.header__content_nav ul li.has-sub.active:hover ul {
+  position: relative;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.header__content_nav ul li.has-sub.active ul {
+  position: relative;
   opacity: 1;
   visibility: visible;
   z-index: 1;
@@ -479,6 +505,20 @@ body.js-loaded .page-preloader {
 
 .footer ul {
   display: flex;
+}
+
+.footer__logo {
+  width: 19rem;
+  height: 7rem;
+}
+
+.footer__logo a {
+  display: inline-block;
+}
+
+.footer__logo img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer__top {
@@ -978,7 +1018,7 @@ body.js-loaded .page-preloader {
 
 .portfolio__btn {
   display: flex;
-  margin-bottom: -3.6rem;
+  margin-bottom: 0;
 }
 
 .portfolio-button-prev,
@@ -1082,7 +1122,8 @@ body.js-loaded .page-preloader {
 
 .information__logo {
   text-align: center;
-  margin-bottom: 9.6rem;
+  margin: 0 auto 9.6rem;
+  max-width: 59.6rem;
 }
 
 .information__logo img {
@@ -1154,7 +1195,7 @@ body.js-loaded .page-preloader {
 }
 
 .contact {
-  padding: 10rem 0 23rem;
+  padding: 10rem 0 20rem;
 }
 
 .contact__wrap {
@@ -1178,7 +1219,7 @@ body.js-loaded .page-preloader {
 }
 
 .contact__title {
-  margin-bottom: 7rem;
+  margin-bottom: 6.7rem;
 }
 
 .contact__title h2 {
@@ -1216,6 +1257,7 @@ body.js-loaded .page-preloader {
 .contact__form {
   width: 100%;
   max-width: 47.8rem;
+  padding: 4.8rem 0 0;
 }
 
 .contact__form label {
@@ -1482,10 +1524,6 @@ body.js-loaded .page-preloader {
 
 .card__item-title {
   color: #FFF;
-  font-size: 4.8rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 100%;
   margin-bottom: 4rem;
 }
 
@@ -1511,7 +1549,7 @@ body.js-loaded .page-preloader {
 .card__inner-title {
   color: #FFC600;
   font-variant-numeric: lining-nums proportional-nums;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
@@ -1662,16 +1700,35 @@ body.js-loaded .page-preloader {
 }
 
 @media (max-width: 992px) {
+  .header__content_nav ul li.has-sub a:after {
+    top: 50%;
+  }
+
+  .header__content_nav ul li.has-sub a {
+    text-align: center;
+  }
+
+  .header__content_nav ul li.has-sub ul {
+    padding: 2.4rem 0 0;
+    align-items: center;
+    width: 100%;
+    z-index: -1;
+    flex-direction: column;
+    background: transparent;
+  }
+
+  .header__content_nav ul li.has-sub:hover ul {
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+  }
+
   .header {
     top: 0.7rem;
   }
 
   .header__content {
     padding: 1.4rem 0;
-  }
-
-  .header__content_logo {
-    height: 4.1rem;
   }
 
   .header__content_nav {
@@ -1812,7 +1869,7 @@ body.js-loaded .page-preloader {
   }
 
   h2 {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
 
   h3 {
@@ -2038,5 +2095,34 @@ body.js-loaded .page-preloader {
   .service__page .service__item-media {
     padding: 1.2rem;
     width: 100%;
+  }
+
+  .card {
+    padding: 6.4rem 0 6.4rem;
+  }
+
+  .card__item {
+    margin-bottom: 9rem;
+  }
+
+  .card__item-title {
+    margin-bottom: 1.6rem;
+  }
+
+  .card__item-media {
+    margin-bottom: 2.6rem;
+  }
+
+  .card__inner {
+    flex-direction: column;
+    margin-bottom: 2.4rem;
+  }
+
+  .card__inner-title {
+    max-width: 100%;
+  }
+
+  .card__inner-text {
+    max-width: 100%;
   }
 }

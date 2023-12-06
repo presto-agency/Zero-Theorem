@@ -9,6 +9,7 @@ export const aosAnimation = () => {
     if ($(window).width() < 992) {
         $('.has-sub').on('click', function (e) {
             e.preventDefault();
+            $(this).toggleClass('active');
         })
     }
     else {}
