@@ -4,6 +4,7 @@
   overflow: hidden;
   @media (max-width: $mob) {
     min-height: 67.4rem;
+    text-align: center;
   }
   &:after{
     position: absolute;
@@ -197,6 +198,9 @@
   @media (max-width: $desktop-sl) {
     padding: 6.4rem 0 6.4rem;
   }
+  @media (max-width: $mob) {
+    text-align: center;
+  }
   &:after{
     position: absolute;
     content: '';
@@ -260,7 +264,6 @@
     @media (max-width: $mob) {
       flex-direction: column;
       margin-bottom: 2.4rem;
-      align-items: flex-start;
     }
     h2{
       color: $brand-color-yellow;
@@ -343,7 +346,9 @@
     line-height: 100%; /* 16px */
     letter-spacing: 4.8px;
     text-transform: uppercase;
-
+    @media (max-width: $mob) {
+      text-align: center;
+    }
   }
   &__info{
     max-width: 33.5rem;
@@ -374,6 +379,8 @@
       margin-bottom: 0;
       position: absolute;
       bottom: 0;
+      justify-content: center;
+      width: 100%;
     }
   }
   &-button-prev,
@@ -407,6 +414,9 @@
     margin-right: 4.4rem;
   }
   &__item{
+    @media (max-width: $mob) {
+      text-align: center;
+    }
     &-title{
       margin-bottom: 4rem;
       @media (max-width: $mob) {
@@ -517,6 +527,9 @@
       margin-bottom: 2.4rem;
       border-bottom: 1px solid #201901;
     }
+    @media (max-width: $mob) {
+      text-align: center;
+    }
     &:nth-child(1){}
     &:nth-child(3){
       padding-left: 12.4rem;
@@ -593,6 +606,9 @@
     @media (max-width: $desktop-sm) {
       max-width: 100%;
       margin-bottom: 2.4rem;
+    }
+    @media (max-width: $mob) {
+      text-align: center;
     }
     img{
       width: 100%;

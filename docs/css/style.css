@@ -541,10 +541,6 @@ body.js-loaded .page-preloader {
   text-transform: capitalize;
 }
 
-.footer__top a:hover {
-  color: #3870FF;
-}
-
 .footer__copy {
   color: #6F7A83;
   font-variant-numeric: lining-nums proportional-nums;
@@ -573,7 +569,7 @@ body.js-loaded .page-preloader {
 }
 
 .footer__bottom a:hover {
-  text-decoration-line: none;
+  color: #3870FF;
 }
 
 .button {
@@ -1959,6 +1955,7 @@ body.js-loaded .page-preloader {
 
   .hero {
     min-height: 67.4rem;
+    text-align: center;
   }
 
   .hero.hero__about {
@@ -1974,6 +1971,10 @@ body.js-loaded .page-preloader {
     letter-spacing: 7.8px;
   }
 
+  .service {
+    text-align: center;
+  }
+
   .service:after {
     height: auto;
     width: 100%;
@@ -1982,7 +1983,6 @@ body.js-loaded .page-preloader {
   .service__title {
     flex-direction: column;
     margin-bottom: 2.4rem;
-    align-items: flex-start;
   }
 
   .service__title h2 {
@@ -2002,6 +2002,10 @@ body.js-loaded .page-preloader {
     padding-bottom: 8rem;
   }
 
+  .portfolio__title {
+    text-align: center;
+  }
+
   .portfolio__info {
     max-width: 100%;
   }
@@ -2014,6 +2018,12 @@ body.js-loaded .page-preloader {
     margin-bottom: 0;
     position: absolute;
     bottom: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .portfolio__item {
+    text-align: center;
   }
 
   .portfolio__item-title {
@@ -2037,12 +2047,20 @@ body.js-loaded .page-preloader {
     margin: 1rem 0;
   }
 
+  .information__item {
+    text-align: center;
+  }
+
   .contact {
     padding: 6.4rem 0 6.4rem;
   }
 
   .contact__wrap {
     padding: 1.2rem;
+  }
+
+  .contact__media {
+    text-align: center;
   }
 
   .contact__title {
