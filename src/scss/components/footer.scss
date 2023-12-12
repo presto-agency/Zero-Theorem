@@ -50,7 +50,9 @@
       font-weight: 500;
       line-height: 100%; /* 14px */
       text-transform: capitalize;
-
+      &:hover{
+        color: $brand-color-yellow;
+      }
     }
   }
   &__copy{
