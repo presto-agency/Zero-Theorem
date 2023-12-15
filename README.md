@@ -58,3 +58,5 @@ deploy:
 [service](https://presto-agency.github.io/Zero-Theorem/service.html),
 [portfolio](https://presto-agency.github.io/Zero-Theorem/portfolio.html),
 [contact](https://presto-agency.github.io/Zero-Theorem/contact.html),
+[404](https://presto-agency.github.io/Zero-Theorem/404.html),
+[text-page.html](https://presto-agency.github.io/Zero-Theorem/text-page.html),
