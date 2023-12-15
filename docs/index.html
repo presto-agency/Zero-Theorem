@@ -26,17 +26,17 @@
               About us
             </a>
           </li>
-          <li class="has-sub">
+          <li class="menu-item-has-children">
             <a href="service.html">
               Services
             </a>
             <ul>
-              <li><a href="#">Statistical/Econometric Modelling</a></li>
+              <li><a href="service.html">Statistical/Econometric Modelling</a></li>
               <li><a href="#">Business Re-Structuring and</a></li>
               <li><a href="#">Optimisation Management Services</a></li>
             </ul>
           </li>
-          <li class="has-sub">
+          <li class="menu-item-has-children">
             <a href="portfolio.html">
               Portfolio
             </a>
@@ -216,7 +216,7 @@
               <input type="text" id="name" required>
               <label for="email">Email:</label>
               <input type="text" id="email" required>
-              <button type="submit" class="button _yellow">Submit</button>
+              <button type="submit" class="btn-popup button _yellow" data-popup="thanks">Submit</button>
             </form>
           </div>
         </div>
@@ -249,6 +249,14 @@
     </div>
   </div>
 </footer>
+<div class="popup popup__thanks" data-popup="thanks">
+  <div class="popup__wrap">
+    <div class="popup__close"></div>
+    <div class="popup__title h1">Thank you!</div>
+    <div class="popup__text">You will be hearing from us soon!</div>
+  </div>
+  <div class="popup__overlay"></div>
+</div>
 <script src="js/app.min.js"></script>
 </body>
 </html>

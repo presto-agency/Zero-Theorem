@@ -1,0 +1,46 @@
+.full-text{
+  padding: 12rem 0 9.1rem;
+  color: #6F7A83;
+  font-size: 3.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+  position: relative;
+  .bg-right{
+    position: absolute;
+    right: 0;
+    top: -20rem;
+    width: 25.8rem;
+    height: 57.8rem;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  h2, .h2{
+    color: #fff;
+    margin-bottom: 9.6rem;
+  }
+  &.pt-0{
+    padding-top: 1.6rem;
+  }
+  @media (max-width: $desktop-sl) {
+    padding: 6.4rem 0 6.4rem;
+    h2, .h2{
+      color: #fff;
+      margin-bottom: 4.6rem;
+    }
+  }
+  @media (max-width: $mob) {
+    font-size: 2rem;
+    text-align: center;
+    h2, .h2{
+      color: #fff;
+      margin-bottom: 2.4rem;
+    }
+    .bg-right{
+      top: -10rem;
+      width: 10.8rem;
+      height: 37.8rem;
+    }
+  }
+}

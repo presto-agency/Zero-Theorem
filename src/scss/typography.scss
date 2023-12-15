@@ -44,14 +44,110 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 111%;
   font-weight: 700;
   @media (max-width: $mob) {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
+table{
+  border: 0;
+  border-spacing: 0;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 160%;
+  @media (max-width: $mob) {
+    font-size: 1.4rem;
+  }
+  th{
+    border-top: 1px solid #fff;
+  }
+  th, td{
+    padding: 0 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+    &:last-of-type{
+      border-right: 1px solid #fff;
+    }
+  }
+}
+.text__page{
 
+  ul{
+    li{
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 160%;
+      @media (max-width: $mob) {
+        font-size: 1.4rem;
+      }
+      position: relative;
+      padding-left: 2rem;
+      &:before{
+        position: absolute;
+        content: '';
+        left: 0;
+        border-radius: 50%;
+        background: $brand-color-yellow;
+        top: .8rem;
+        width: .8rem;
+        height: .8rem;
+      }
+    }
+  }
+  ol{
+    counter-reset: my-counter;
+    li{
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 160%;
+      counter-increment: my-counter;
+      @media (max-width: $mob) {
+        font-size: 1.4rem;
+      }
+      position: relative;
+      &:before{
+        position: relative;
+        display: inline-block;
+        content: counter(my-counter) ". ";
+        color: $brand-color-yellow;
+        min-width: 2rem;
+      }
+    }
+  }
+  table{
+    margin-bottom: 2.4rem;
+    @media (max-width: $mob) {
+      margin-bottom: 1.2rem;
+    }
+  }
+  blockquote{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 160%;
+    padding-left: 2rem;
+    position: relative;
+    &:before{
+      position: absolute;
+      content: '';
+      width: .4rem;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: $brand-color-yellow;
+    }
+    @media (max-width: $mob) {
+      font-size: 1.4rem;
+    }
+    margin-bottom: 2.4rem;
+    @media (max-width: $mob) {
+      margin-bottom: 1.2rem;
+    }
+  }
+}
 p {
   font-size: 1.6rem;
   font-weight: 500;

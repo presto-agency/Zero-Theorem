@@ -77,7 +77,7 @@
               }
             }
           }
-          &.has-sub{
+          &.has-sub, &.menu-item-has-children{
             position: relative;
             @media (max-width: $desktop-sl) {
               text-align: center;
