@@ -96,7 +96,7 @@
     }
     &-media{
       width: 100%;
-      margin-bottom: 9.6rem;
+      margin-bottom: 6.4rem;
       img{
         width: 100%;
       }
@@ -113,7 +113,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 6.4rem;
-
+    position: relative;
     @media (max-width: $mob) {
       flex-direction: column;
       margin-bottom: 2.4rem;
@@ -128,8 +128,13 @@
       letter-spacing: 4.8px;
       text-transform: uppercase;
       max-width: 54rem;
+      display: flex;
+      justify-content: space-between;
       @media (max-width: $mob) {
         max-width: 100%;
+        text-align: center;
+        width: 100%;
+        justify-content: center;
       }
     }
     &-text{
@@ -151,12 +156,75 @@
         }
       }
     }
+    &-link{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+      @media (max-width: $mob) {
+        position: relative;
+        text-align: center;
+        margin-top: 2rem;
+      }
+    }
     &-media{
       width: 100%;
       margin-top: 4.8rem;
       img{
         width: 100%;
       }
+    }
+  }
+  &__item{
+    &-info{
+      margin-bottom: 9.6rem;
+      display: flex;
+      border-radius: 1.5rem;
+      border: 1px solid  #201901;
+      background:  #0A0A0A;
+      padding: 8.6rem 10.4rem;
+      @media (max-width: $mob) {
+        padding: 2.6rem 1.2rem;
+        flex-direction: column;
+      }
+    }
+  }
+  &__info{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $mob) {
+      width: 100%;
+      padding-bottom: 2rem;
+      margin-bottom: 2rem;
+    }
+    &:first-of-type{
+      position: relative;
+      &:after{
+        position: absolute;content: '';
+        right: -5rem;
+        top: 0;
+        height: 100%;
+        width: 1px;
+        background: #201901;
+        @media (max-width: $mob) {
+          right: 0;
+          height: 1px;
+          width: 100%;
+          top: auto;
+          bottom: 0;
+          z-index: -1;
+        }
+      }
+    }
+    .h4{
+      color: $brand-color-yellow;
+      margin-bottom: 1.6rem;
+    }
+    .h3{
+      font-weight: 600;
+      color: #fff;
     }
   }
 }
