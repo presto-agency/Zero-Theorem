@@ -1011,7 +1011,7 @@ body.js-loaded .page-preloader {
 .about__item-title {
   color: #FFC600;
   font-variant-numeric: lining-nums proportional-nums;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-style: normal;
   font-weight: 600;
   line-height: 100%;
@@ -1021,7 +1021,7 @@ body.js-loaded .page-preloader {
 
 .about__item-desc {
   width: 100%;
-  max-width: 640px;
+  max-width: 64rem;
 }
 
 .about__item-desc p {
@@ -2520,6 +2520,10 @@ body.js-loaded .page-preloader {
   .about:before {
     height: auto;
     width: 100%;
+  }
+
+  .about__item {
+    text-align: center;
   }
 
   .bread-crumbs {

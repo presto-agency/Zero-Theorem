@@ -29,13 +29,16 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 9.6rem;
+    @media (max-width: $mob) {
+      text-align: center;
+    }
     &:last-of-type{
       margin-bottom: 0;
     }
     &-title{
       color:$brand-color-yellow;
       font-variant-numeric: lining-nums proportional-nums;
-      font-size: 16px;
+      font-size: 1.6rem;
       font-style: normal;
       font-weight: 600;
       line-height: 100%;
@@ -44,7 +47,7 @@
     }
     &-desc{
       width: 100%;
-      max-width: 640px;
+      max-width: 64rem;
       p{
         color: #6F7A83;
         font-variant-numeric: lining-nums proportional-nums;
