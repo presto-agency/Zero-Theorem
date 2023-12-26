@@ -1,6 +1,10 @@
 html {
   font-size: calc(100vw / 1440 * 10);
 
+  @media (max-width: $desktop-x) {
+    font-size: calc(100vw / 1199 * 10);
+  }
+
   @media (max-width: $mob) {
     font-size: calc(100vw / 360 * 10);
   }
@@ -39,6 +43,23 @@ body {
 .wrapper {
   overflow: hidden;
   min-height: 100%;
+}
+.hidden{
+  display: none;
+}
+.contact__img{
+  img{
+    transition: all ease 300ms;
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+    &.img-hidden{
+      position: absolute;
+      opacity: 0;
+      transform: scale(.2);
+      visibility: hidden;
+    }
+  }
 }
 
 .container {

@@ -394,6 +394,24 @@ body.js-loaded .page-preloader {
   min-height: 100%;
 }
 
+.hidden {
+  display: none;
+}
+
+.contact__img img {
+  transition: all ease 300ms;
+  opacity: 1;
+  transform: scale(1);
+  visibility: visible;
+}
+
+.contact__img img.img-hidden {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0.2);
+  visibility: hidden;
+}
+
 .container {
   max-width: 144rem;
   padding: 0 6.4rem;
@@ -862,10 +880,10 @@ body.js-loaded .page-preloader {
 }
 
 .hero__bg {
-  top: 0;
+  top: -20rem;
   left: 0;
   right: 0;
-  height: 100%;
+  height: calc(100% + 20rem);
   position: absolute;
   z-index: 1;
 }
@@ -1297,7 +1315,7 @@ body.js-loaded .page-preloader {
 }
 
 .contact {
-  padding: 10rem 0 20rem;
+  padding: 10rem 0 26rem;
 }
 
 .contact__wrap {
@@ -1363,6 +1381,7 @@ body.js-loaded .page-preloader {
 
 .contact__img {
   max-width: 41.5rem;
+  position: relative;
 }
 
 .contact__img img {
@@ -1509,6 +1528,10 @@ body.js-loaded .page-preloader {
   position: relative;
 }
 
+.information .container {
+  position: relative;
+}
+
 .information:before,
 .information:after {
   position: absolute;
@@ -1534,7 +1557,7 @@ body.js-loaded .page-preloader {
 
 .information__logo {
   text-align: center;
-  margin: 0 auto 9.6rem;
+  margin: 0 auto 0.6rem;
   max-width: 59.6rem;
 }
 
@@ -1568,13 +1591,13 @@ body.js-loaded .page-preloader {
 }
 
 .information__item:nth-child(1) {
-  left: 19.5rem;
-  top: 4.3rem;
+  left: 0;
+  top: -3rem;
 }
 
 .information__item:nth-child(2) {
-  right: 18.6rem;
-  top: 0rem;
+  left: 50%;
+  top: -3rem;
 }
 
 .information__item:nth-child(3) {
@@ -2193,6 +2216,10 @@ body.js-loaded .page-preloader {
 }
 
 @media (max-width: 1199px) {
+  html {
+    font-size: 0.834028357vw;
+  }
+
   .hero__content {
     padding: 0;
     max-width: 100%;
