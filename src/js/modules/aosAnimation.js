@@ -63,4 +63,38 @@ export const aosAnimation = () => {
         }
 
     })
+    // $('.card__info').each(function (e) {
+    //     $(window).on('scroll', () => {
+    //         var scrollTop = $(window).scrollTop();
+    //         if ( scrollTop > $(this).offset().top - 450) {
+    //             $(this).addClass('open');
+    //         }
+    //     })
+    // });
+    $.fn.isInViewport = function() {
+        var elementTop = $(this).offset().top;
+        var elementBottom = elementTop + $(this).outerHeight();
+        var viewportTop = $(window).scrollTop();
+        var viewportBottom = viewportTop + $(window).height();
+        return elementTop < viewportBottom;
+    };
+
+// Animate numbers when scrolled into view
+    $(window).scroll(function() {
+        $('.card__info > .h3  > span').each((i, el) => {
+            var $counter = $(el);
+            if (!$counter.isInViewport() || $counter.data('animation-started'))
+                return;
+
+            $counter.data('animation-started', true).prop('Counter', 0).animate({
+                Counter: $counter.text()
+            }, {
+                duration: 3000,
+                easing: 'swing',
+                step: function(now) {
+                    $counter.text(Math.ceil(now));
+                }
+            });
+        });
+    });
 };

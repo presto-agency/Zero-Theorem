@@ -1388,6 +1388,10 @@ body.js-loaded .page-preloader {
   width: 100%;
 }
 
+.contact__img svg {
+  width: 100%;
+}
+
 .contact__img svg path {
   transition: all ease 2000ms;
   opacity: 0;
