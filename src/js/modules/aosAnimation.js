@@ -50,14 +50,16 @@ export const aosAnimation = () => {
     });
     $(window).on('scroll', () => {
         var scrollTop = $(window).scrollTop();
-        if ( scrollTop > $('.contact').offset().top ) {
+        if ( scrollTop > $('.contact').offset().top - 150) {
             tstScroll();
+        }else{
+            $('.contact__img svg').removeClass('start');
         }
         function tstScroll(){
             setTimeout(function() {
-                $('.contact__img img:first-child').addClass('img-hidden');
-                $('.contact__img img:last-child').removeClass('img-hidden');
-            }, 2000);
+                $('.contact__img svg').addClass('start');
+
+            }, 100);
         }
 
     })
