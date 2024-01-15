@@ -98,3 +98,15 @@ export const aosAnimation = () => {
         });
     });
 };
+var pathContact = $('.contact__img').find('path');
+for ( var i = 46, l = pathContact.length; i < l; i++ ) {
+    var test = $('.bsqTEkjy_'+i).attr('transform');
+    $('.bsqTEkjy_'+i).attr('data-css', test);
+    $('.bsqTEkjy_'+ i).css({'transform' :  'translateY(160px) translateX(260px)'});
+}
+$(".contact__img").find('path').each(function () {
+    setTimeout(function (e) {
+        pathContact.removeAttr('style');
+    }, 4000);
+});
+
