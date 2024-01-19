@@ -115,7 +115,7 @@ $(window).on('scroll', () => {
     var parallaxElement  = $('.parallax-element');
     var parallaxElementNumber = scrollTop / 5;
     console.log(Number(parallaxElementNumber));
-    $(parallaxElement).css('transform',  'translate(0, -'+parallaxElementNumber+'px)');
+    $(parallaxElement).css('transform',  'translate(0, '+parallaxElementNumber+'px)');
     $('.span-parallax').css('transform',  'translate(0, '+parallaxElementNumber+'px)');
     if ( scrollTop >= 10 ){}else{}
 
