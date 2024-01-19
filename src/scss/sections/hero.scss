@@ -6,7 +6,7 @@
     min-height: 67.4rem;
     text-align: center;
   }
-  &:after{
+  .span-parallax{
     position: absolute;
     content: '';
     height: 17.6rem;
@@ -16,6 +16,7 @@
     background-size: cover;
     left: 0;
     top: 0;
+    transition: all ease 500ms;
     z-index: 3;
   }
   .container{
@@ -206,4 +207,7 @@
 @keyframes b-text-scroll {
   0% { transform: translate3d(0, 0, 0); }
   100% { transform: translate3d(-100%, 0, 0); }
+}
+.parallax-element{
+  transition: all ease 300ms;
 }
