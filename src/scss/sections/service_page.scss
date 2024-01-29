@@ -9,6 +9,7 @@
     height: 87.6rem;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: all ease 300ms;
   }
   @media (max-width: $desktop-sl) {
     .bg-service{

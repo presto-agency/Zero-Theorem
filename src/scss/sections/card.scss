@@ -1,9 +1,9 @@
 .card{
   padding: 10rem 0 22rem;
   position: relative;
-  &:before{
+  .span-parallax-half{
     position: absolute;
-    content: '';
+    transition: all ease 300ms;
     width: 15.6rem;
     height: 37.1rem;
     background-size: contain;
@@ -19,9 +19,12 @@
     margin-bottom: 22rem;
     &:nth-child(odd){
       position: relative;
-      &:before{
+      .span-parallax-right{
+        display: none;
+      }
+      .span-parallax-left{
         position: absolute;
-        content: '';
+        transition: all ease 300ms;
         left: -30rem;
         bottom: 0;
         opacity: 0.5;
@@ -36,11 +39,11 @@
     }
     &:nth-child(even){
       position: relative;
-      &:before, &:after{
+      .span-parallax-right, .span-parallax-left{
         position: absolute;
-        content: '';
+        transition: all ease 300ms;
       }
-      &:before{
+      .span-parallax-right{
         width: 36.8rem;
         height: 36.8rem;
         top: -10rem;
@@ -54,7 +57,7 @@
           height: 12.8rem;
         }
       }
-      &:after{
+      .span-parallax-left{
         width: 22.8rem;
         height: 22.8rem;
         background-repeat: no-repeat;
@@ -72,7 +75,7 @@
         }
       }
       @media (max-width: $desktop-x) {
-        &:after{
+        .span-parallax-left{
           right: 0;
         }
       }

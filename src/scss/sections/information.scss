@@ -7,19 +7,19 @@
   .container{
     position: relative;
   }
-  &:before, &:after{
+  .span-parallax-left, .span-parallax-right{
     position: absolute;
-    content: '';
+    transition: all ease 300ms;
     background-size: cover;
   }
-  &:before{
+  .span-parallax-left{
     top: 30rem;
     left: 0;
     width: 11.5rem;
     height: 25.3rem;
     background-image: url("../img/general/info-left.png");
   }
-  &:after{
+  .span-parallax-right{
     top: -3rem;
     right: 0;
     width: 14.4rem;

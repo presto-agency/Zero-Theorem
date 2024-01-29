@@ -2,11 +2,12 @@
   padding: 0 0 10rem;
   margin: -1.6rem 0 0 0;
   position: relative;
-  &:before{
+  .span-parallax-half{
     position: absolute;
     content: '';
     height: 99.3rem;
     width: 87.2rem;
+    transition: all ease 300ms;
     background-image: url("../img/general/about-bg.png");
     background-repeat: no-repeat;
     left: 0;

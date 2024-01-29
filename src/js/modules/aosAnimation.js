@@ -114,9 +114,10 @@ $(window).on('scroll', () => {
     var scrollTop = $(window).scrollTop();
     var parallaxElement  = $('.parallax-element');
     var parallaxElementNumber = scrollTop / 5;
-    console.log(Number(parallaxElementNumber));
+    var parallaxElementNumberHalf = scrollTop / 15;
     $(parallaxElement).css('transform',  'translate(0, '+parallaxElementNumber+'px)');
     $('.span-parallax').css('transform',  'translate(0, '+parallaxElementNumber+'px)');
+    $('.span-parallax-half').css('transform',  'translate(0, '+parallaxElementNumberHalf+'px)');
     if ( scrollTop >= 10 ){}else{}
 
 });
