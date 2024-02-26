@@ -34,7 +34,7 @@
   }
   &__media{
     width: 100%;
-    max-width: 44.8rem;
+    max-width: 50.5rem;
     @media (max-width: $desktop-sm) {
       max-width: 100%;
       margin-bottom: 2.4rem;
@@ -78,7 +78,8 @@
     }
   }
   &__img{
-    max-width: 41.5rem;
+    width: 100%;
+    max-width: 50.5rem;
     position: relative;
     @media (max-width: $desktop-sm) {
       max-width: 100%;

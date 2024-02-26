@@ -1,6 +1,6 @@
 import $ from "jquery";
 import AOS from 'aos/dist/aos.js';
-
+import * as LottiePlayer from "@lottiefiles/lottie-player";
 export const aosAnimation = () => {
     AOS.init({
         duration: 600,
@@ -53,24 +53,13 @@ export const aosAnimation = () => {
         if ( scrollTop > $('.contact').offset().top - 150) {
             tstScroll();
         }else{
-            $('.contact__img svg').removeClass('start');
         }
         function tstScroll(){
             setTimeout(function() {
-                $('.contact__img svg').addClass('start');
 
             }, 100);
         }
-
-    })
-    // $('.card__info').each(function (e) {
-    //     $(window).on('scroll', () => {
-    //         var scrollTop = $(window).scrollTop();
-    //         if ( scrollTop > $(this).offset().top - 450) {
-    //             $(this).addClass('open');
-    //         }
-    //     })
-    // });
+    });
     $.fn.isInViewport = function() {
         var elementTop = $(this).offset().top;
         var elementBottom = elementTop + $(this).outerHeight();
@@ -98,18 +87,6 @@ export const aosAnimation = () => {
         });
     });
 };
-var pathContact = $('.contact__img').find('path');
-for ( var i = 46, l = pathContact.length; i < l; i++ ) {
-    var test = $('.bsqTEkjy_'+i).attr('transform');
-    $('.bsqTEkjy_'+i).attr('data-css', test);
-    $('.bsqTEkjy_'+ i).css({'transform' :  'translateY(160px) translateX(260px)'});
-}
-$(".contact__img").find('path').each(function () {
-    setTimeout(function (e) {
-        pathContact.removeAttr('style');
-    }, 4000);
-});
-
 $(window).on('scroll', () => {
     var scrollTop = $(window).scrollTop();
     var parallaxElement  = $('.parallax-element');
@@ -119,5 +96,4 @@ $(window).on('scroll', () => {
     $('.span-parallax').css('transform',  'translate(0, '+parallaxElementNumber+'px)');
     $('.span-parallax-half').css('transform',  'translate(0, '+parallaxElementNumberHalf+'px)');
     if ( scrollTop >= 10 ){}else{}
-
 });

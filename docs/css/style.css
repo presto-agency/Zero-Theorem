@@ -1356,7 +1356,7 @@ body.js-loaded .page-preloader {
 
 .contact__media {
   width: 100%;
-  max-width: 44.8rem;
+  max-width: 50.5rem;
 }
 
 .contact__media img {
@@ -1392,7 +1392,8 @@ body.js-loaded .page-preloader {
 }
 
 .contact__img {
-  max-width: 41.5rem;
+  width: 100%;
+  max-width: 50.5rem;
   position: relative;
 }
 
