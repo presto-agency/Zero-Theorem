@@ -48,6 +48,7 @@ export const aosAnimation = () => {
         $('.popup').removeClass('active');
         $('body').removeClass('scroll');
     });
+
     $(window).on('scroll', () => {
         var scrollTop = $(window).scrollTop();
         if ( scrollTop > $('.contact').offset().top - 150) {
@@ -87,6 +88,9 @@ export const aosAnimation = () => {
         });
     });
 };
+
+
+
 $(window).on('scroll', () => {
     var scrollTop = $(window).scrollTop();
     var parallaxElement  = $('.parallax-element');

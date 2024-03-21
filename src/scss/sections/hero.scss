@@ -215,9 +215,13 @@
   transition: all ease 300ms;
 }
 .pdf__page{
+  .about__item{
+    flex-direction: column;
+  }
   .about__item-desc{
-    max-width: 80rem;
-    embed, iframe{
+    max-width: 100%;
+    margin-top: 10rem;
+    embed, iframe, .load-html{
       width: 100%;
       height: 90vh;
     }
