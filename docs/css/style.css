@@ -2402,7 +2402,7 @@ body.js-loaded .page-preloader {
   }
 
   .pdf__page .about__item-desc {
-    max-width: 90%;
+    max-width: 100%;
     margin: 0 auto;
   }
 
